@@ -1,0 +1,624 @@
+/*navbar*************************************************************************************************************************************/
+
+nav{
+  background-color: #201f1f7e;
+  position: fixed;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 3px 5px 10px 2px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 30px black;
+}
+nav .nav-content{
+  height: 100%;
+  max-width: 1700px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  width: 8%;
+    height: 8%;
+    padding-right: 850px;
+}
+nav .logo a{
+  font-weight: 800;
+  font-size: 40px;
+  color: rgb(242, 190, 60);
+  font-family: Didot;
+  text-decoration: none;
+}
+.nav-content .nav-links{
+  display: flex;
+  justify-content: left;
+  gap: 15px;
+}
+.nav-content .nav-links li{
+  list-style: none;
+
+}
+ .nav-links li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  
+  /* padding: 0px 0px; */
+}
+ .nav-links li a:hover{
+   color: #4070f4;
+ }
+
+.top-border{
+  height: 70px;
+  width: 100%;
+  background-image: url(../src/assets/march-spring.jpg);
+  background-size: cover;
+}
+
+/*Home **********************************************************************************************************************************/
+
+.topcontainer{
+  background-image: url(../src/assets/slider1.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.highlight{
+  margin-left: 10px;
+  margin-top: 40vh;
+  width: 40%;
+  height: 50vh;
+  background-color: #f7f7f7a7;
+  font-size: 60px;
+  font-weight: 900;
+  padding: 20px;
+}
+.highlight span{
+  color: rgb(241, 179, 19);
+}
+
+.topimg{
+  margin-right: 10px;
+  width: 40%;
+  height: 50vh;
+  background-image: url(./assets/modern-furniture-designs.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+}
+.topimg:hover{
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.images{
+  width: 100%;
+  height: 100vh;
+  background-color: cornsilk;
+  /* background-image: url(./assets/services-banner-1-1.jpg);
+  background-size: cover; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px
+
+}
+
+.images img{
+  width: 15%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: all ease-in-out 0.5s;
+}
+
+.images img:hover{
+  width: 40%;
+}
+
+
+.count{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(255, 234, 151);
+}
+.count h1{
+  font-size: 40px;
+  font-weight: 800;
+}
+.innercount{
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+  padding-bottom: 20px;
+}
+.innercount h2{
+  font-size: 30px;
+}
+.wtvoffer{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.offerh1{
+  width: 100%;
+  text-align: center;
+}
+.wtvoffer div{
+  width: 20%;
+  height: 50vh;
+  padding: 15px;
+  margin: 20px;
+  background-color: cornsilk;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(88, 88, 88, 0.786);
+}
+.wtvoffer div:hover{
+  transform: scale(1.1);
+}
+.wtvoffer div h4{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.designphotos{
+  width: 100%;
+  height: fit-content;
+  background-color: cornsilk;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.designphotos h3{
+  text-align: left;
+  padding-left: 40px;
+  font-size: x-large;
+}
+.designphotos div{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+.designphotos img{
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  /* padding: 10px; */
+}
+.getintouchbtndiv{
+  width: 100%;
+  height: 70vh;
+  background-image: url(./assets/bookbg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.getintouchbtndiv div{
+  width: 40%;
+  height: 70vh;
+  background-color: rgba(255, 248, 220, 0.736);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.getintouchbtndiv div h1{
+  font-size: 60px;
+  font-family: Didot;
+  color: #b1600e;
+  text-shadow:0 1px 3px rgb(255, 255, 255) ;
+}
+.getintouchbtndiv div button{
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background-color: #193f27;
+}
+.getintouchbtndiv div button:hover{
+  background-color: #3b905a;
+}
+.getintouchbtndiv div button a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/*footer************************************************************************************************************************************ */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  height: fit-content;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0 ;
+  margin-left: 1rem;
+}
+
+.footer-links li {
+  margin-right: 1rem;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  text-align: right;
+}
+
+.footer-links a:hover {
+  color: #e1e0e0;
+}
+
+.footer-right {
+  display: none;
+}
+.footercontact{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30%;
+}
+.footertext{
+  width: 30%;
+}
+
+/* About us**************************************************************************************************************************************** */
+.aboutus{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  background-color: rgba(255, 253, 244, 0.736);
+  gap: 30px;
+}
+.aboutusheadimg{
+  width: 100%;
+  height: 40vh;
+  background-image: url(./assets/inner_page_banner.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  
+}
+.aboutusheadimg img{
+  width: 250px;
+  padding-left: 20px;
+}
+.aboutus-para{
+  padding: 2rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  width: 800px;
+  height: fit-content;
+}
+.abtimgs{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.abtimgs img{
+  width: 500px;
+  border-radius: 10px;
+}
+
+
+/* projects **********************************************************************************************************************************/
+
+.projecthead{
+  width: 100%;
+  height: 40vh;
+  background-image: url(./assets/proj-head.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.projectdiv{
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+.projectdiv h1{
+  text-align: center;
+  color: #b1600e;
+  
+  text-decoration: underline;
+}
+.projectimgs{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.projectimgs div{
+  width: 450px;
+  border-color: #333;
+  border-style: solid;
+  border-width: 1px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projectimgs img{
+  width: 400px;
+}
+
+
+/* contact ***********************************************************************************************************************************/
+
+.contactdiv{
+  width: 100%;
+  height: 100vh;
+  background-image: url(./assets/contact-img1.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactform{
+  width: 40%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  padding-bottom: 20px;
+  background-color: rgba(255, 248, 220, 0.801);
+  border-radius: 10px;
+}
+.contactform:hover{
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.contactform h1{
+  color: #193f27;
+  font-weight: 900;
+}
+.contactform input,textarea{
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+.contactform textarea{
+  height: 100px;
+}
+.contactform button{
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #193f27;
+}
+.contactform button:hover{
+  background-color: #3b905a;
+}
+.contactform button a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* services********************************************************************************************************************************** */
+.service-para{
+  text-align: center;
+  color: burlywood;
+}
+.service-h1{
+  font-size: 40px;
+  text-align: center;
+  color: burlywood;
+}
+.service-imgs{
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.serviceimg1{
+  width: 30%;
+  height: 50vh;
+  background-color: #313131;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  /* padding: 0 10px 0 10px; */
+}
+.service-imgs p{
+  font-size: 25px;
+  color: #fff;
+}
+.service-imgs h3{
+  font-size: 30px;
+  color: #fff;
+  font-weight: 800;
+}
+.serviceimg2{
+  width: 30%;
+  height: 50vh;
+  background-color: #313131;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.serviceimg3{
+  width: 30%;
+  height: 50vh;
+  background-color: #313131;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.serviceimg4{
+  width: 30%;
+  height: 50vh;
+  background-color: #313131;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.serviceimg1:hover{
+  background-image: url(./assets/designphotos/livingroom3.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.serviceimg2:hover{
+  background-image: url(./assets/designphotos/modularkitchen3.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.serviceimg3:hover{
+  background-image: url(./assets/designphotos/Wardrobe3.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.serviceimg4:hover{
+  background-image: url(./assets/projects/design4.jpeg);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.howitworks{
+  width: 100%;
+  height: 70vh;
+  background-image: url(./assets/how\ it\ works.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* FAQs **************************************************************************************************************************************/
+
+.faq-body{
+  background-color: rgb(249, 215, 172);
+}
+/* .faqsdiv{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+} */
+
+.faq-container h1{
+  font-size: 55px;
+  font-weight: bold;
+  font-family: Didot;
+  color: rgb(174, 136, 86);
+}
+/* .faq-question{
+  width: 50vw;
+} */
+
+.faq-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section {
+  margin-bottom: 20px;
+}
+.faq-section h2 {
+  color: #555;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+.faq {
+  margin-bottom: 10px;
+}
+.faq h3 {
+  margin: 0;
+  cursor: pointer;
+  padding: 10px;
+  background: #bdbdbd;
+  border-radius: 5px;
+}
+.faq h3:hover {
+  background: #dbcfc0;
+}
+.faq p {
+  margin: 0;
+  padding: 10px;
+  display: none;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+.faq:hover p{
+  display: flex;
+}
