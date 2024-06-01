@@ -35,94 +35,93 @@ function FAQs() {
        
 <div class="faq-container">
     <h1>Frequently Asked Questions</h1>
-    
 
     <div class="faq-section">
         <h2>General Questions</h2>
-        <div class="faq">
-            <h3>What services does Renoft offer?</h3>
+        <details>
+            <summary>What services does Renoft offer?</summary>
             <p>Renoft provides comprehensive interior design services for homes, offices, shops, showrooms, and other commercial spaces. Our services include space planning, design consultation, project management, and full-service interior design.</p>
-        </div>
-        <div class="faq">
-            <h3>How do I get started with Renoft?</h3>
+        </details>
+        <details>
+            <summary>How do I get started with Renoft?</summary>
             <p>To get started, you can contact us via our website or phone to schedule an initial consultation. During this meeting, we’ll discuss your needs, preferences, and budget to understand your vision for the space.</p>
-        </div>
-        <div class="faq">
-            <h3>What is the typical process for an interior design project with Renoft?</h3>
+        </details>
+        <details>
+            <summary>What is the typical process for an interior design project with Renoft?</summary>
             <p>Our process typically involves an initial consultation, design concept development, detailed planning, material selection, project execution, and final installation. We ensure a collaborative approach to meet your specific requirements.</p>
-        </div>
-        <div class="faq">
-            <h3>Can Renoft work with my existing furniture and décor?</h3>
+        </details>
+        <details>
+            <summary>Can Renoft work with my existing furniture and décor?</summary>
             <p>Yes, we can incorporate your existing furniture and décor into the new design. Our goal is to create a cohesive and harmonious space that reflects your style while maximizing functionality.</p>
-        </div>
-        <div class="faq">
-            <h3>What areas do you serve?</h3>
+        </details>
+        <details>
+            <summary>What areas do you serve?</summary>
             <p>Renoft serves a wide range of locations. Please contact us to confirm if we can provide services in your specific area.</p>
-        </div>
+        </details>
     </div>
 
     <div class="faq-section">
         <h2>Home Interior Design</h2>
-        <div class="faq">
-            <h3>Can you help with small home renovation projects?</h3>
+        <details>
+            <summary>Can you help with small home renovation projects?</summary>
             <p>Absolutely! No project is too small for us. Whether you need a complete home makeover or just want to refresh a single room, we can help.</p>
-        </div>
-        <div class="faq">
-            <h3>How do you ensure that the design reflects my personal style?</h3>
+        </details>
+        <details>
+            <summary>How do you ensure that the design reflects my personal style?</summary>
             <p>During the initial consultation, we take the time to understand your preferences, lifestyle, and design tastes. We then create a personalized design plan that reflects your unique style.</p>
-        </div>
-        <div class="faq">
-            <h3>Do you provide eco-friendly design options?</h3>
+        </details>
+        <details>
+            <summary>Do you provide eco-friendly design options?</summary>
             <p>Yes, we offer sustainable and eco-friendly design solutions. We can recommend materials, furnishings, and practices that are environmentally responsible.</p>
-        </div>
+        </details>
     </div>
 
     <div class="faq-section">
         <h2>Office Interior Design</h2>
-        <div class="faq">
-            <h3>How can Renoft improve the functionality of my office space?</h3>
+        <details>
+            <summary>How can Renoft improve the functionality of my office space?</summary>
             <p>We focus on creating efficient layouts that enhance productivity, comfort, and collaboration. Our designs incorporate ergonomic furniture, optimized workflows, and smart storage solutions.</p>
-        </div>
-        <div class="faq">
-            <h3>Can you design offices for remote and hybrid work environments?</h3>
+        </details>
+        <details>
+            <summary>Can you design offices for remote and hybrid work environments?</summary>
             <p>Yes, we can design flexible office spaces that accommodate remote and hybrid work models. This includes creating multi-functional areas, private workspaces, and technology integration.</p>
-        </div>
-        <div class="faq">
-            <h3>What is your approach to branding in office design?</h3>
+        </details>
+        <details>
+            <summary>What is your approach to branding in office design?</summary>
             <p>We incorporate your brand identity into the design through color schemes, logos, and unique design elements that reflect your company’s culture and values.</p>
-        </div>
+        </details>
     </div>
 
     <div class="faq-section">
         <h2>Shop and Showroom Interior Design</h2>
-        <div class="faq">
-            <h3>How can you help attract more customers to my shop/showroom?</h3>
+        <details>
+            <summary>How can you help attract more customers to my shop/showroom?</summary>
             <p>Our designs focus on creating inviting and visually appealing spaces that enhance the customer experience. We use strategic layouts, lighting, and display techniques to attract and retain customers.</p>
-        </div>
-        <div class="faq">
-            <h3>Do you provide customized display solutions?</h3>
+        </details>
+        <details>
+            <summary>Do you provide customized display solutions?</summary>
             <p>Yes, we offer customized display solutions tailored to your products and brand. We ensure that your merchandise is showcased in the most appealing and effective manner.</p>
-        </div>
-        <div class="faq">
-            <h3>Can you work within a tight budget for shop/showroom design?</h3>
+        </details>
+        <details>
+            <summary>Can you work within a tight budget for shop/showroom design?</summary>
             <p>We are experienced in working with various budgets and can provide cost-effective solutions without compromising on quality and aesthetics.</p>
-        </div>
+        </details>
     </div>
 
     <div class="faq-section">
         <h2>Other Services</h2>
-        <div class="faq">
-            <h3>Do you offer consultation-only services?</h3>
+        <details>
+            <summary>Do you offer consultation-only services?</summary>
             <p>Yes, we offer design consultation services where we provide expert advice and design recommendations without full project management. This is ideal for clients who prefer to execute the design themselves.</p>
-        </div>
-        <div class="faq">
-            <h3>How do you handle project timelines and deadlines?</h3>
+        </details>
+        <details>
+            <summary>How do you handle project timelines and deadlines?</summary>
             <p>We work diligently to create realistic project timelines and adhere to them. Clear communication and efficient project management ensure that we meet deadlines and deliver quality results on time.</p>
-        </div>
-        <div class="faq">
-            <h3>What sets Renoft apart from other interior design firms?</h3>
+        </details>
+        <details>
+            <summary>What sets Renoft apart from other interior design firms?</summary>
             <p>Renoft stands out due to our personalized approach, attention to detail, and commitment to client satisfaction. Our team of experienced designers works closely with clients to bring their vision to life while ensuring functionality and style.</p>
-        </div>
+        </details>
     </div>
 </div>
 
