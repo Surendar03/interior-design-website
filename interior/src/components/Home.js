@@ -60,7 +60,7 @@ function Home() {
 <div className='innercount'>
 <div>
   <h2>75000+</h2>
-  <span>#company</span>
+  <span>Company</span>
 </div>
 <div>
 <h2>3500+</h2>
