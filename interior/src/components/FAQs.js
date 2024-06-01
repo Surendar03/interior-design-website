@@ -16,7 +16,7 @@ function FAQs() {
             <nav>
         <div class="nav-content">
           <div class="logo">
-            <a href="#">Renoft</a>
+            <NavLink to={"/"}><a href="#">Renoft</a></NavLink>
           </div>
           <ul class="nav-links">
           <li><NavLink to={"/"}><a href="#">Home</a></NavLink></li>
