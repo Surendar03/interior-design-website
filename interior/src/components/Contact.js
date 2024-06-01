@@ -2,9 +2,12 @@ import React, { useState } from 'react'
 import '../App.css';
 import { NavLink } from 'react-router-dom'
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
 
 function Contact() {
 
+  const navigateTo = useNavigate()
   const [data, setdata] = useState({
     cname: "",
     email_id: "",
@@ -23,7 +26,10 @@ function getintouch(e) {
     console.log(data)
     axios.post("http://localhost:8000/Contact", data).then(
         (res) => {
-            alert(res.data)
+             if (res.data === "Designer will soon contact you. \n Thank you for contacting us!") {
+              alert("Designer will soon contact you. \n Thank you for contacting us!")
+              navigateTo("/")
+             }
             
 
         }).catch(
@@ -38,7 +44,7 @@ function getintouch(e) {
             <nav>
         <div class="nav-content">
           <div class="logo">
-            <a href="#">Renoft</a>
+            <NavLink to={"/"}><a href="#">Renoft</a></NavLink>
           </div>
           <ul class="nav-links">
           <li><NavLink to={"/"}><a href="#">Home</a></NavLink></li>
