@@ -361,6 +361,7 @@ nav .logo a:hover{
 .aboutusheadimg img{
   width: 250px;
   padding-left: 20px;
+  filter: drop-shadow(5px 5px 10px  wheat);
 }
 .aboutus-para{
   padding: 2rem;
