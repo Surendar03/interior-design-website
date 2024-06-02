@@ -41,7 +41,7 @@ function Home() {
       </nav>
             <div className='topcontainer'>
                 <div className='highlight'>
-                Bring home beautiful interiors <span>that fit your budget</span>
+               <p> Bring home beautiful interiors <span>that fit your budget</span></p>
                 </div>
                 <div className='topimg'>
                 </div>
