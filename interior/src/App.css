@@ -51,6 +51,7 @@ nav .logo a{
   color: #ffffff;
   font-size: 18px;
   font-weight: 500;
+   transition: ease-in-out 0.2s;
   
   /* padding: 0px 0px; */
 }
@@ -102,6 +103,7 @@ nav .logo a{
   background-size: cover;
   border-radius: 10px;
   box-shadow: 0 0 20px black;
+  transition: ease-in-out 0.2s;
 }
 .topimg:hover{
   box-shadow: 0 0 20px rgb(255, 255, 255);
@@ -174,6 +176,7 @@ nav .logo a{
   background-color: cornsilk;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 rgba(88, 88, 88, 0.786);
+  transition: ease-in-out 0.2s;
 }
 .wtvoffer div:hover{
   transform: scale(1.1);
@@ -207,7 +210,11 @@ nav .logo a{
   width: 350px;
   height: 250px;
   border-radius: 10px;
+  transition: ease-in-out 0.2s;
   /* padding: 10px; */
+}
+.designphotos img:hover{
+  transform: scale(1.1);
 }
 .getintouchbtndiv{
   width: 100%;
@@ -228,6 +235,9 @@ nav .logo a{
   justify-content: center;
   align-items: center;
 }
+.getintouchbtndiv div:hover{
+  box-shadow: 2px 2px 10px 2px wheat;
+}
 .getintouchbtndiv div h1{
   font-size: 60px;
   font-family: Didot;
@@ -242,9 +252,11 @@ nav .logo a{
   border: none;
   border-radius: 10px;
   background-color: #193f27;
+  transition: ease-in-out 0.2s;
 }
 .getintouchbtndiv div button:hover{
   background-color: #3b905a;
+  transform: scale(1.1);
 }
 .getintouchbtndiv div button a{
   text-decoration: none;
@@ -300,6 +312,7 @@ nav .logo a{
   text-decoration: none;
   text-align: right;
   padding: 3px;
+  transition: ease-in-out 0.2s;
 }
 
 .footer-links a:hover {
@@ -432,6 +445,7 @@ nav .logo a{
   padding-bottom: 20px;
   background-color: rgba(255, 248, 220, 0.801);
   border-radius: 10px;
+  transition: ease-in-out 0.2s;
 }
 .contactform:hover{
   box-shadow: 0 0 10px rgb(255, 255, 255);
@@ -458,9 +472,12 @@ nav .logo a{
   color: #fff;
   border-radius: 10px;
   background-color: #193f27;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
 }
 .contactform button:hover{
   background-color: #3b905a;
+  transform: scale(1.1);
 }
 .contactform button a{
   text-decoration: none;
@@ -543,21 +560,25 @@ nav .logo a{
   background-image: url(./assets/designphotos/livingroom3.jpg);
   background-size: cover;
   background-blend-mode: multiply;
+  transform: scale(1.1);
 }
 .serviceimg2:hover{
   background-image: url(./assets/designphotos/modularkitchen3.jpg);
   background-size: cover;
   background-blend-mode: multiply;
+  transform: scale(1.1);
 }
 .serviceimg3:hover{
   background-image: url(./assets/designphotos/Wardrobe3.jpg);
   background-size: cover;
   background-blend-mode: multiply;
+  transform: scale(1.1);
 }
 .serviceimg4:hover{
   background-image: url(./assets/projects/design4.jpeg);
   background-size: cover;
   background-blend-mode: multiply;
+  transform: scale(1.1);
 }
 .howitworks{
   width: 100%;
