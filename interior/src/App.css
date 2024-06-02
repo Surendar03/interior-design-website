@@ -28,7 +28,7 @@ nav .nav-content{
 .logo{
   width: 8%;
     height: 8%;
-    padding-right: 800px;
+    padding-right: 750px;
 }
 nav .logo a{
   font-weight: 800;
@@ -55,7 +55,9 @@ nav .logo a{
   /* padding: 0px 0px; */
 }
  .nav-links li a:hover{
-   color: #4070f4;
+   background-color: rgb(249, 215, 172);
+   border-radius: 10px;
+   color: #000000;
  }
 
 .top-border{
