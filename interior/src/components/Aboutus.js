@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App.css';
 import { NavLink } from 'react-router-dom'
-import headimg from '../assets/inner_page_banner.png'
+import abt3 from '../assets/designphotos/livingroom2.jpg'
 import abt1 from '../assets/minimalist-home-office-in-bedroom.jpg'
 import abt2 from '../assets/services-banner-1-1.jpg'
 import renoftlogo from '../assets/renoft-logo.png'
@@ -49,6 +49,7 @@ In conclusion, Renoft is more than just an interior design service provider; we'
 <div className='abtimgs'>
     <img src={abt1}></img>
     <img src={abt2}></img>
+    <img src={abt3}></img>
 </div>
 </div>
 
