@@ -26,7 +26,7 @@ nav .nav-content{
   justify-content: center;
 }
 .logo{
-  width: 8%;
+  width: 100px;
     height: 8%;
     padding-right: 750px;
 }
@@ -36,6 +36,9 @@ nav .logo a{
   color: rgb(242, 190, 60);
   font-family: Didot;
   text-decoration: none;
+}
+nav .logo a:hover{
+  color: rgb(249, 209, 106);
 }
 .nav-content .nav-links{
   display: flex;
