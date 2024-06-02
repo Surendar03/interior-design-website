@@ -299,10 +299,13 @@ nav .logo a{
   color: #fff;
   text-decoration: none;
   text-align: right;
+  padding: 3px;
 }
 
 .footer-links a:hover {
   color: #e1e0e0;
+  background-color: #555;
+  border-radius: 5px;
 }
 
 .footer-right {
