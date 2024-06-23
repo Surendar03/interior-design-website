@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 
 
+
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded());
@@ -40,7 +41,7 @@ app.post("/Contact", (req, res) => {
   console.log(req.body);
  
   getintouch
-    .findOne({ email_id: req.body.email_id })
+    .findOne({ email_id: req.body.email_id, phone_number: req.body.phone_number })
     .then((resp) => {
       if (resp) {
         res.send("Already entered details");
@@ -59,7 +60,7 @@ app.post("/Contact", (req, res) => {
             if (ack) {
               res.send("Designer will soon contact you. \n Thank you for contacting us!");            
             } else {
-              res.send("Error occured while creating the account...!");
+              res.send("Error occured...!");
             }
           })
           .catch((err) => {
