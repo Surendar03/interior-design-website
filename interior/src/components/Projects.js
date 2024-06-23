@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import '../App.css';
 import { NavLink } from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
 import design1 from '../assets/projects/design1.jpg'
 import design2 from '../assets/projects/design2.jpg'
 import design3 from '../assets/projects/design3.jpg'
@@ -9,24 +10,34 @@ import design5 from '../assets/projects/design5.jpg'
 import design6 from '../assets/projects/design6.jpeg'
 
 function Projects() {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.replace('#', ''));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [hash]);
     return (
-        <div>
+        <div id="body">
             <nav>
         <div class="nav-content">
           <div class="logo">
-            <NavLink to={"/"}><a href="#">Renoft</a></NavLink>
+          <NavLink to={"/#body"}><a href="#">Renoft</a></NavLink>
           </div>
           <ul class="nav-links">
-          <li><NavLink to={"/"}><a href="#">Home</a></NavLink></li>
-          <li><NavLink to={"/Services"}><a href="#">Services</a></NavLink></li>
-            <li><NavLink to={"/Contact"}><a href="#">Contact</a></NavLink></li>
-            <li><NavLink to={"/Aboutus"}><a href="#">About Us</a></NavLink></li>
-            <li><NavLink to={"/Projects"}><a href="#">Projects</a></NavLink></li>
-            <li><NavLink to={"/FAQs"}><a href="#">FAQs</a></NavLink></li>
+          <li><NavLink to={"/#body"}><a href="#">Home</a></NavLink></li>
+          <li><NavLink to={"/Services#body"}><a href="#">Services</a></NavLink></li>
+            <li><NavLink to={"/Contact#body"}><a href="#">Contact</a></NavLink></li>
+            <li><NavLink to={"/Aboutus#body"}><a href="#">About Us</a></NavLink></li>
+            <li><NavLink to={"/Projects#body"}><a href="#">Projects</a></NavLink></li>
+            <li><NavLink to={"/FAQs#body"}><a href="#">FAQs</a></NavLink></li>
           </ul>
         </div>
       </nav>
-      <div className='top-border'></div>
+      {/* <div className='top-border'></div> */}
       <div className='projecthead'></div>
 <div className='projectdiv'>
     <h1>Completed Projects</h1>
@@ -79,12 +90,12 @@ function Projects() {
     <div class="footer-left">
       
       <ul class="footer-links">
-      <li><NavLink to={"/"}><a href="#">Home</a></NavLink></li>
-      <li><NavLink to={"/Services"}><a href="#">Services</a></NavLink></li>
-            <li><NavLink to={"/Contact"}><a href="#">Contact</a></NavLink></li>
-            <li><NavLink to={"/Aboutus"}><a href="#">About Us</a></NavLink></li>
-            <li><NavLink to={"/Projects"}><a href="#">Projects</a></NavLink></li>
-            <li><NavLink to={"/FAQs"}><a href="#">FAQs</a></NavLink></li>
+      <li><NavLink to={"/#body"}><a href="#">Home</a></NavLink></li>
+            <li><NavLink to={"/Services#body"}><a href="#">Services</a></NavLink></li>
+            <li><NavLink to={"/Contact#body"}><a href="#">Contact</a></NavLink></li>
+            <li><NavLink to={"/Aboutus#body"}><a href="#">About Us</a></NavLink></li>
+            <li><NavLink to={"/Projects#body"}><a href="#">Projects</a></NavLink></li>
+            <li><NavLink to={"/FAQs#body"}><a href="#">FAQs</a></NavLink></li>
       </ul>
     </div>
   </div>
