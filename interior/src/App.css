@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
@@ -8,12 +9,12 @@
 
 nav{
   background-color: #201f1f7e;
-  position: fixed;
-  border-radius: 10px;
+  position: sticky;
+  /* border-radius: 10px; */
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 3px 5px 10px 2px;
+  /* padding: 3px 5px 10px 2px; */
   backdrop-filter: blur(5px);
   box-shadow: 0px 0px 30px black;
 }
@@ -21,6 +22,7 @@ nav .nav-content{
   height: 100%;
   max-width: 1700px;
   margin: auto;
+  padding: 3px 5px 10px 2px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +34,7 @@ nav .nav-content{
 }
 nav .logo a{
   font-weight: 800;
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(242, 190, 60);
   font-family: Didot;
   text-decoration: none;
@@ -53,14 +55,13 @@ nav .logo a:hover{
   text-decoration: none;
   color: #ffffff;
   font-size: 18px;
+  padding: 2px;
   font-weight: 500;
-   transition: ease-in-out 0.2s;
-  
-  /* padding: 0px 0px; */
+  transition: ease-in-out 0.2s;
 }
  .nav-links li a:hover{
-   background-color: rgb(249, 215, 172);
-   border-radius: 10px;
+  background-color: rgb(249, 215, 172);
+  border-radius: 10px;
    color: #000000;
  }
 
@@ -71,13 +72,16 @@ nav .logo a:hover{
   background-size: cover;
 }
 
+
+
 /*Home **********************************************************************************************************************************/
 
 .topcontainer{
   background-image: url(../src/assets/slider1.png);
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-size: cover;
+  /* background-position: center; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,14 +90,16 @@ nav .logo a:hover{
 
 .highlight{
   margin-left: 10px;
-  margin-top: 40vh;
+  margin-top: 30vh;
   width: 40%;
-  height: 50vh;
+  height: fit-content;
   background-color: #f7f7f7a7;
   font-size: 55px;
   font-weight: 900;
   padding: 20px;
+  
 }
+
 .highlight span{
   color: rgb(241, 179, 19);
 }
@@ -116,11 +122,11 @@ nav .logo a:hover{
   width: 100%;
   height: 100vh;
   background-color: cornsilk;
-  /* background-image: url(./assets/services-banner-1-1.jpg);
-  background-size: cover; */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-image: url(../src/assets/formal-wallpapers.jpg);
+  background-size: cover; */
   gap:10px
 
 }
@@ -209,15 +215,14 @@ nav .logo a:hover{
   justify-content: space-evenly;
   padding-bottom: 20px;
 }
+.designphotos img:hover{
+  transform: scale(1.1);
+}
 .designphotos img{
   width: 350px;
   height: 250px;
   border-radius: 10px;
   transition: ease-in-out 0.2s;
-  /* padding: 10px; */
-}
-.designphotos img:hover{
-  transform: scale(1.1);
 }
 .getintouchbtndiv{
   width: 100%;
@@ -259,12 +264,16 @@ nav .logo a:hover{
 }
 .getintouchbtndiv div button:hover{
   background-color: #3b905a;
+  cursor: pointer;
   transform: scale(1.1);
 }
 .getintouchbtndiv div button a{
   text-decoration: none;
   color: #fff;
 }
+
+
+
 
 /*footer************************************************************************************************************************************ */
 
@@ -339,6 +348,8 @@ nav .logo a:hover{
   width: 30%;
 }
 
+
+
 /* About us**************************************************************************************************************************************** */
 .aboutus{
   width: 100%;
@@ -349,7 +360,7 @@ nav .logo a:hover{
 }
 .aboutusheadimg{
   width: 100%;
-  height: 40vh;
+  height: 25vh;
   background-image: url(./assets/inner_page_banner.png);
   background-size: cover;
   background-position: center;
@@ -359,7 +370,7 @@ nav .logo a:hover{
   
 }
 .aboutusheadimg img{
-  width: 250px;
+  width: 150px;
   padding-left: 20px;
   filter: drop-shadow(5px 5px 10px  wheat);
 }
@@ -392,7 +403,7 @@ nav .logo a:hover{
 
 .projecthead{
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   background-image: url(./assets/proj-head.jpg);
   background-size: cover;
   background-position: center;
@@ -430,6 +441,7 @@ nav .logo a:hover{
 .projectimgs img{
   width: 400px;
 }
+
 
 
 /* contact ***********************************************************************************************************************************/
@@ -483,7 +495,7 @@ nav .logo a:hover{
   border-radius: 10px;
   background-color: #193f27;
   cursor: pointer;
-  transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.3s;
 }
 .contactform button:hover{
   background-color: #3b905a;
@@ -493,6 +505,7 @@ nav .logo a:hover{
   text-decoration: none;
   color: #fff;
 }
+
 
 /* services********************************************************************************************************************************** */
 .service-para{
@@ -510,7 +523,7 @@ nav .logo a:hover{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
 }
 .serviceimg1{
   width: 35%;
@@ -522,7 +535,7 @@ nav .logo a:hover{
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  /* padding: 0 10px 0 10px; */
+  transition: ease-in-out 0.3s;
 }
 .service-imgs p{
   font-size: 25px;
@@ -543,6 +556,7 @@ nav .logo a:hover{
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  transition: ease-in-out 0.3s;
 }
 .serviceimg3{
   width: 35%;
@@ -554,6 +568,7 @@ nav .logo a:hover{
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  transition: ease-in-out 0.3s;
 }
 .serviceimg4{
   width: 35%;
@@ -565,6 +580,7 @@ nav .logo a:hover{
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  transition: ease-in-out 0.3s;
 }
 .serviceimg1:hover{
   background-image: url(./assets/designphotos/livingroom3.jpg);
@@ -598,31 +614,13 @@ nav .logo a:hover{
   background-position: center;
 }
 
+
+
 /* FAQs **************************************************************************************************************************************/
 
 .faq-body{
   background-color: rgb(249, 215, 172);
 }
-/* .faqsdiv{
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-} */
-
-.faq-container h1{
-  font-size: 55px;
-  font-weight: bold;
-  font-family: Didot;
-  color: rgb(174, 136, 86);
-}
-/* .faq-question{
-  width: 50vw;
-} */
-
 .faq-container {
   max-width: 800px;
   margin: 20px auto;
@@ -666,3 +664,4 @@ details p {
   background: #f9f9f9;
   border-radius: 5px;
 }
+
