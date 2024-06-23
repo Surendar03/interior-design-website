@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import '../App.css';
+import { useLocation } from 'react-router-dom';
+
 import adv1 from '../assets/Interius-Advantage-1.png';
 import adv2 from '../assets/Interius-Advantage-2.png';
 import adv3 from '../assets/Interius-Advantage-3.png';
@@ -22,26 +24,37 @@ import Wardrobe3 from '../assets/designphotos/Wardrobe3.jpg';
 import Wardrobe4 from '../assets/designphotos/Wardrobe4.jpg';
 
 function Home() {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.replace('#', ''));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [hash]);
     return (
-        <div>
+        <div id='body'>
             <nav>
-        <div class="nav-content">
+        <div class="nav-content" id="navbar1">
           <div class="logo">
-            <NavLink to={"/"}><a href="#">Renoft</a></NavLink>
+          <NavLink to={"/#body"}><a href="#">Renoft</a></NavLink>
           </div>
           <ul class="nav-links">
-          <li><NavLink to={"/"}><a href="#">Home</a></NavLink></li>
-          <li><NavLink to={"/Services"}><a href="#">Services</a></NavLink></li>
-            <li><NavLink to={"/Contact"}><a href="#">Contact</a></NavLink></li>
-            <li><NavLink to={"/Aboutus"}><a href="#">About Us</a></NavLink></li>
-            <li><NavLink to={"/Projects"}><a href="#">Projects</a></NavLink></li>
-            <li><NavLink to={"/FAQs"}><a href="#">FAQs</a></NavLink></li>
+          <li><NavLink to={"/#body"}><a href="#">Home</a></NavLink></li>
+          <li><NavLink to={"/Services#body"}><a href="#">Services</a></NavLink></li>
+            <li><NavLink to={"/Contact#body"}><a href="#">Contact</a></NavLink></li>
+            <li><NavLink to={"/Aboutus#body"}><a href="#">About Us</a></NavLink></li>
+            <li><NavLink to={"/Projects#body"}><a href="#">Projects</a></NavLink></li>
+            <li><NavLink to={"/FAQs#body"}><a href="#">FAQs</a></NavLink></li>
+           
           </ul>
         </div>
       </nav>
             <div className='topcontainer'>
                 <div className='highlight'>
-               <p> Bring home beautiful interiors <span>that fit your budget</span></p>
+               <p>Bring home beautiful interiors <span>that fit your budget</span></p> 
                 </div>
                 <div className='topimg'>
                 </div>
@@ -143,7 +156,7 @@ function Home() {
 <div className='getintouchbtndiv'>
   <div>
     <h1>Renoft</h1>
-    <button><NavLink to={"/Contact"}><a href='#'>Get in Touch</a></NavLink></button>
+    <button><NavLink to={"/Contact#body"}><a href='#'>Get in Touch</a></NavLink></button>
   </div>
 </div>
 
@@ -171,12 +184,12 @@ function Home() {
     <div class="footer-left">
       
       <ul class="footer-links">
-      <li><NavLink to={"/"}><a href="#">Home</a></NavLink></li>
-      <li><NavLink to={"/Services"}><a href="#">Services</a></NavLink></li>
-            <li><NavLink to={"/Contact"}><a href="#">Contact</a></NavLink></li>
-            <li><NavLink to={"/Aboutus"}><a href="#">About Us</a></NavLink></li>
-            <li><NavLink to={"/Projects"}><a href="#">Projects</a></NavLink></li>
-            <li><NavLink to={"/FAQs"}><a href="#">FAQs</a></NavLink></li>
+      <li><NavLink to={"/#body"}><a href="#">Home</a></NavLink></li>
+            <li><NavLink to={"/Services#body"}><a href="#">Services</a></NavLink></li>
+            <li><NavLink to={"/Contact#body"}><a href="#">Contact</a></NavLink></li>
+            <li><NavLink to={"/Aboutus#body"}><a href="#">About Us</a></NavLink></li>
+            <li><NavLink to={"/Projects#body"}><a href="#">Projects</a></NavLink></li>
+            <li><NavLink to={"/FAQs#body"}><a href="#">FAQs</a></NavLink></li>
       </ul>
       
     </div>
